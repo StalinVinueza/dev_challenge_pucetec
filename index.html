@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    
+    <title>Eco-Shop</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+     </head>
+  <body>
+             <!-- <div class="preloader-wrapper">
+      <div class="preloader">
+      </div>
+    </div> -->
+
+    <!-- <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart">
+      <div class="offcanvas-header justify-content-center">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Growers cider</h6>
+                <small class="text-body-secondary">Brief description</small>
+              </div>
+              <span class="text-body-secondary">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Fresh grapes</h6>
+                <small class="text-body-secondary">Brief description</small>
+              </div>
+              <span class="text-body-secondary">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Heinz tomato ketchup</h6>
+                <small class="text-body-secondary">Brief description</small>
+              </div>
+              <span class="text-body-secondary">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+  
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+        </div>
+      </div>
+    </div> -->
+    
+
+    <header>
+      <div class="container-fluid">
+        <div class="row py-3 border-bottom">
+          
+          <div class="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
+            <div class="d-flex align-items-center my-3 my-sm-0">
+              <a href="index.html">
+                <img src="images/logo_eco_shop.svg" alt="logo" class="img-fluid" style="width: 200px;">
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <i class="bi bi-list" style="font-size: 2em; color: black;"></i>
+            </button>
+          </div>
+          
+          <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
+            <div class="search-bar row bg-light p-2 rounded-4">
+              <!-- <div class="col-md-4 d-none d-md-block">
+                <select class="form-select border-0 bg-transparent">
+                  <option>Todas las categorías</option>
+                  <option>Bebidas</option>
+                  <option>Snacks</option>
+                  <option>Verduras y Vegetales</option>
+                  <option>Accesorios</option>
+                  <option>Nutrientes y Fertilizantes</option>
+                  <option>Otros</option>
+                </select>
+              </div> -->
+              <div class="col-11 col-md-7">
+                <form id="search-form" class="text-center" action="index.html" method="post">
+                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Busca un producto">
+                </form>
+              </div>
+              <div class="col-1">
+                <i class="bi bi-search"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- menu de navegacion -->
+          <div class="col-lg-4">
+            <ul class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark">
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
+                  <li><a href="index.html" class="dropdown-item">About Us </a></li>
+                  <li><a href="index.html" class="dropdown-item">Shop </a></li>
+                  <li><a href="index.html" class="dropdown-item">Single Product </a></li>
+                  <li><a href="index.html" class="dropdown-item">Cart </a></li>
+               
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
+            <ul class="d-flex justify-content-end list-unstyled m-0">
+              <li>
+                <a href="#" class="p-2 mx-1">
+                  <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="p-2 mx-1">
+                  <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                  <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- menu de categorías -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+
+      <div class="offcanvas-header justify-content-between">
+        <h4 class="fw-normal text-uppercase fs-6">Menu</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+    
+        <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+          <li class="nav-item border-dashed active">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-bag-heart"></i>
+              <span>Artículos biodegradables</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-egg"></i>
+              <span>Alimentos orgánicos</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-flower1"></i>
+              <span>Productos veganos</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-bag-heart"></i>
+              <span>Ropa ecológica</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-heart"></i>
+              <span>Joyería sostenible</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-bag-heart"></i>
+              <span>Fundas reutilizables</span>
+            </a>
+          </li>
+          
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-fan"></i>
+              <span>Proyectos de economía circular</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-r-circle"></i>
+              <span>Productos hechos con materiales reciclados</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-r-circle"></i>
+              <span>Servicios de reciclaje</span>
+            </a>
+          </li>
+                  <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-flower1"></i>
+              <span>Semillas orgánicas</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-star"></i>
+              <span>Compost y fertilizantes naturales</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-flower2"></i>
+              <span>Huertos urbanos</span>
+            </a>
+          </li>
+          <li class="nav-item border-dashed">
+            <a href="index.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+              <i class="bi bi-tree"></i>
+              <span>Talleres y cursos ecológicos</span>
+            </a>
+          </li>
+          
+        </ul>
+      
+      </div>
+
+    </div>
+
+
+
+    
+    
+    
+    <section style="background-image: url('images/banner-1.jpg');background-repeat: no-repeat;background-size: cover;">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-6 pt-5 mt-5">
+            <h2 class="display-1 ls-1"> <span class="fw-bold" style="color:black;">Todo Lo Necesario </span>para tu <span class="fw-bold text-primary">Salud y la del Planeta</span></h2>
+            <p class="fs-4">Busca entre 6 categorías y más de 100 productos.</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Catálogo de productos</a>
+              <a href="#" class="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Inicia Sesión</a>
+            </div>
+            <div class="row my-5">
+              <div class="col">
+                <div class="row text-dark">
+                  <div class="col-auto"><p class="fs-1 fw-bold lh-sm mb-0">100%</p></div>
+                  <div class="col"><p class="text-uppercase lh-sm mb-0">Productos Originales</p></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row text-dark">
+                  <div class="col-auto"><p class="fs-1 fw-bold lh-sm mb-0">Seguridad</p></div>
+                  <div class="col"><p class="text-uppercase lh-sm mb-0">Durante la compra y envío de tus Productos</p></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row text-dark">
+                  <div class="col-auto"><p class="fs-1 fw-bold lh-sm mb-0">Envíos</p></div>
+                  <div class="col"><p class="text-uppercase lh-sm mb-0">A nivel nacional</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center">
+          <div class="col">
+            <div class="card border-0 bg-primary rounded-0 p-4 text-light">
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <svg width="60" height="60"><use xlink:href="#fresh"></use></svg>
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body p-0">
+                    <h5 class="text-light">Amigables con el medio ambiente</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 bg-secondary rounded-0 p-4 text-light">
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <svg width="60" height="60"><use xlink:href="#organic"></use></svg>
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body p-0">
+                    <h5 class="text-light">100% Productos Originales</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 bg-danger rounded-0 p-4 text-light">
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <svg width="60" height="60"><use xlink:href="#delivery"></use></svg>
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body p-0">
+                    <h5 class="text-light">Envíos Seguros</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
