@@ -46,7 +46,7 @@ a.btn-link:hover:after {
   width: 100%;
 }
 
-/* Navbar */
+
 .navbar {
   background-color: #fff;
 }
@@ -59,7 +59,6 @@ a.btn-link:hover:after {
   color: #6BB252;
 }
 
-/* Form */
 .login-form {
   background-color: #fff;
   padding: 2rem;
